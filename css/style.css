@@ -1,0 +1,150 @@
+body {
+  margin: 0 auto;
+}
+
+/* NAV BAR */
+/* nav-bar */
+.nav-bar {
+  height: 150px;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+/* burger-menu */
+.burger-menu h1 {
+  width: 50px;
+  height: 50px;
+}
+
+/* CONTAINER */
+.container {
+  background-color: rgb(170, 97, 97);
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+}
+.title h1 {
+  font-size: 70px;
+  margin-top: 120px;
+}
+.mini-nav-bar {
+  height: 40px;
+  width: 600px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mini-nav-bar a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: gray;
+}
+.mini-nav-bar a:hover {
+  color: blue;
+}
+
+/* h1 {
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 0.15em;
+    font-size: 3em;
+    line-height: 1.2;
+    transform: translateY(52%);
+  }
+  
+  
+  #toggle {
+    display: none;
+  } */
+
+/**
+    Hamburger
+  **/
+/* .hamburger {
+    position: absolute;
+    top: 5em;
+    right: 5%;
+    margin-left: -2em;
+    margin-top: -45px;
+    width: 2em;
+    height: 45px;
+    z-index: 5;
+  }
+  
+  .hamburger div {
+    position: relative;
+    width: 3em;
+    height: 7px;
+    border-radius: 3px;
+    background-color: blue;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+  } */
+
+/**
+  Nav Styles
+  **/
+/* .nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #313468;
+    top: -100%; left: 0; right: 0; bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+  }
+  .nav-wrapper {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  nav {
+    text-align: left;
+    margin-left: 25%;
+  }
+  nav a {
+    position: relative;
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 2em;
+    display: inline-block;
+    margin-top: 1.25em;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 1px;
+  }
+  nav a:before {
+    
+  }
+  nav a:hover {
+    color: white;
+  }
+  nav a:hover:before {
+    height: 100%;
+  } */
+
+/**
+  Animations
+  **/
+/* #toggle:checked + .hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+  }
+  #toggle:checked + .hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  #toggle:checked + .hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -7px;
+  }
+  
+  #toggle:checked + .hamburger + .nav {
+    top: 0;
+    transform: scale(1);
+  } */
