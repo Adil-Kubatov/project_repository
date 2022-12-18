@@ -1,0 +1,104 @@
+.container
+    &__login
+        width: 380px
+        // height: 470px
+        border-radius: 10px
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1)
+        position: relative
+
+.form
+    border-radius: 10px
+    padding: 30px
+    width: 320px
+    &__title 
+        font-size: 27px
+        font-weight: 600
+        position: relative
+    &__title::before
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        height: 3px
+        width: 30px
+        background-color: #5a4fff
+        border-radius: 25px
+
+.input-field
+    margin-top: 30px
+    height: 50px
+    position: relative
+    width: 100%
+    input
+        height: 100%
+        width: 250px
+        position: absolute
+        padding: 0 35px
+        border: none
+        outline: none
+        border-bottom: 2px solid #ccc
+        border-top: 2px solid transparent
+        font-size: 16px
+        transition: all 0.2s ease
+    input:is(:focus, :valid)
+        border-bottom-color: #5a4fff
+    i
+        position: absolute
+        top: 50%
+        // left: 0
+        transform: translateY(-50%)
+        color: #999
+        font-size: 23px
+    input:is(:focus, :valid) ~ i
+        color: #5a4fff
+    i.icon 
+        left: 0
+    i.showHidePw
+        right: 0
+        cursor: pointer
+        padding: 10px
+
+.checkbox
+    display: flex
+    justify-content: space-between
+    margin-top: 20px
+    align-items: center
+    &__content
+        display: flex
+        align-items: center
+        input
+            accent-color: #5a4fff
+            margin: 0 8px 0 4px
+    a
+        text-decoration: none
+    a.text
+        color: #5a4fff
+    a:hover
+        text-decoration: underline
+    .text
+        font-size: 14px
+        color: #333
+
+.form .button
+    margin-top: 35px
+    input
+        border: none
+        color: #fff
+        background-color: #5a4fff 
+        letter-spacing: 1px
+        border-radius: 10px
+        font-size: 17px
+        font-weight: 600
+        cursor: pointer
+        transition: all 0.3s ease
+    input:hover
+        background-color:   #265df2
+
+.login-signup
+    margin-top: 30px
+    text-align: center
+    a
+        text-decoration: none
+        color: #5a4fff
+    a:hover
+        text-decoration: underline
