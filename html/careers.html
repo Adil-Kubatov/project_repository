@@ -10,9 +10,10 @@
 
     <body>
         <div class="main">
+            
             <div class="header">
                 <div class="logo">
-                    <a href="#">
+                    <a href="C:\Users\user\Desktop\University\Front END\final\html\index.html">
                         <img src="https://assets.website-files.com/6010047027c80a4854f3bdd8/60198a0724bdae7b5572f913_logo_blue.svg" loading="lazy" alt="metalab logo">
                     </a>
                 </div>
@@ -30,7 +31,7 @@
                         <div class="text">worth talking about</div>
                     </div>
                     <div class="checkOpenings">
-                        <a href="#" class="checkOpenings_button">Check our current openings <b>&#8595;</b></a>
+                        <a href="#currentOpenings" class="checkOpenings_button" onclick="smooth()">Check our current openings <b>&#8595;</b></a>
                     </div>
                 </div>
             </div>
@@ -132,11 +133,13 @@
                     <div>talented, wonderful humans who work here. I feel so</div>
                     <div>supported by my team as I grow in my career.</div>
                 </div>
-                <div class="midText3_img">
-                    <img src="C:\Users\user\Downloads\green.png" width="37.5" height="37.5">
-                </div>
-                <div class="text5">
-                    <b>Abylai Ospan -</b> Web Developer
+                <div class="midText3_author">
+                    <div class="midText3_img">
+                        <img src="C:\Users\user\Downloads\green.png" width="37.5" height="37.5">
+                    </div>
+                    <div class="text5">
+                        <b>Abylai Ospan -</b> Web Developer
+                    </div>
                 </div>
             </div>
 
@@ -154,7 +157,7 @@
                                 <div class="two_three_text">
                                     “One of the most enjoyable parts of working at MetaLab is getting to experience a variety of projects, working styles, and teams.”
                                     <div class="author1">
-                                        <div class="midText3_img">
+                                        <div class="midText3_img" id="midText3_img">
                                             <img src="C:\Users\user\Downloads\green.png" width="25" height="25">
                                         </div>
                                         <div class="author_text">
@@ -176,7 +179,7 @@
                                 <div class="two_three_text">
                                     “I’ve learned more here in one year than I could’ve ever imagined. And my teammates are a straight-up joy.”
                                     <div class="author2">
-                                        <div class="midText3_img">
+                                        <div class="midText3_img" id="midText3_img">
                                             <img src="C:\Users\user\Downloads\green.png" width="25" height="25">
                                         </div>
                                         <div class="author_text">
@@ -272,7 +275,7 @@
 
             <div class="bottom">
                 <div class="bottom_top">
-                    <div class="bottom_top_title">Current Openings</div>
+                    <div class="bottom_top_title" id="currentOpenings">Current Openings</div>
                     <div class="bottom_top_content">
                         <div class="nav">
                             <span class="all" id="all" onclick="al()">All</span>
