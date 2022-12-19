@@ -5,12 +5,31 @@
     justify-content: space-between
     align-items: center
     padding: 0 50px
-
-@media screen and (max-width: 300px)
+    position: fixed
+    left: 0 
+    top: 0
+    width: 100%
+  
+@media screen and (min-width: 300px)
     .nav-bar
         height: 50px
         padding: 0 10px
         img
             width: 30px
             height: 30px
+        
+@media screen and (min-width: 600px)
+    .nav-bar
+        height: 75px
+        &__container
+            width: 560px
 
+@media screen and (min-width: 900px)
+    .nav-bar
+        height: 100px
+        padding: 0 50px
+        &__container
+            width: 800px
+        img
+            width: 50px
+            height: 50px

@@ -1,8 +1,6 @@
 const container__login = document.querySelector(".container__login"),
       pwShowHide = document.querySelectorAll(".showHidePw"),
-      pwFields = document.querySelectorAll(".password"),
-      signUp = document.querySelector(".signup-link"),
-      login = document.querySelector(".login-link");
+      pwFields = document.querySelectorAll(".password");
 
 
     //   show/hide password and change icon
@@ -26,11 +24,4 @@ const container__login = document.querySelector(".container__login"),
         })
     })
 
-    // appear signup and login form
-    signUp.addEventListener("click", ( )=>{
-        container__login.classList.add("active");
-    });
-    login.addEventListener("click", ( )=>{
-        container__login.classList.remove("active");
-    });
-    
+

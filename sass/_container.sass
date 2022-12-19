@@ -4,7 +4,7 @@
     width: 1000px
     // height: max-content
     margin: 0 auto
-    margin-top: 150px
+    // margin-top: 150px
     &__title
         h1
             font-size: 70px
@@ -22,3 +22,42 @@
             color: gray
         a:hover
             color: blue      
+
+@media screen and (min-width: 300px)
+    .container
+        width: 250px
+        margin-top: 50px
+        h1
+            margin: 0
+            font-size: 25px
+        &__mini-nav-bar
+            height: 30px
+            width: 250px
+            a
+                font-size: 8px
+                font-weight: 300
+
+@media screen and (min-width: 600px)
+    .container
+        width: 500px
+        margin-top: 75px
+        h1
+            font-size: 50px
+            margin: 0
+        &__mini-nav-bar
+            width: 500px
+            a
+                font-size: 15px
+
+@media screen and (min-width: 900px)
+    .container
+        width: 800px
+        margin-top: 100px
+        h1
+            margin-bottom: 10px
+        &__mini-nav-bar
+            width: 500px
+
+@media screen and (min-width: 1400px)
+    .container
+        margin-top: 150px
