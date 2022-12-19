@@ -11,6 +11,16 @@ body {
   padding: 0 50px;
 }
 
+@media screen and (max-width: 300px) {
+  .nav-bar {
+    height: 50px;
+    padding: 0 10px;
+  }
+  .nav-bar img {
+    width: 30px;
+    height: 30px;
+  }
+}
 .container {
   width: 1000px;
   margin: 0 auto;
@@ -91,10 +101,44 @@ body {
   display: flex;
 }
 
-.placeholder__plc {
-  border: 0px none #000;
-  width: 200px;
-  height: 20px;
+.input-field {
+  margin-top: 30px;
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+.input-field input {
+  height: 100%;
+  width: 320px;
+  position: absolute;
+  padding: 0 35px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+.input-field input:is(:focus, :valid) {
+  border-bottom-color: #5a4fff;
+}
+.input-field i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 23px;
+}
+.input-field input:is(:focus, :valid) ~ i {
+  color: #5a4fff;
+}
+.input-field i.icon {
+  left: 0;
+}
+.input-field i.noci {
+  right: 0;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .footer {

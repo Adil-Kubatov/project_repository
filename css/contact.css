@@ -12,6 +12,16 @@ body {
   padding: 0 50px;
 }
 
+@media screen and (max-width: 300px) {
+  .nav-bar {
+    height: 50px;
+    padding: 0 10px;
+  }
+  .nav-bar img {
+    width: 30px;
+    height: 30px;
+  }
+}
 .container {
   width: 1000px;
   margin: 0 auto;
@@ -77,6 +87,13 @@ body {
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   position: relative;
+}
+
+.forms {
+  display: flex;
+  align-items: center;
+  width: 200%;
+  height: 390px;
 }
 
 .form {
