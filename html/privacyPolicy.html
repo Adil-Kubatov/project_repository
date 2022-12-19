@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="../css/privacyPolicy.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Privacy Policy</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="C:\Users\user\Desktop\University\Front END\final\js\script.js"></script>
     </head>
 
@@ -17,9 +18,17 @@
                     </a>
                 </div>
                 <div class="threeLines">
-                    <a href="#">
-                        &#9776;
-                    </a>
+                    <div class="navbar" id="navbar">
+                        <div><a href="#">About</a></div>
+                        <div><a href="C:\Users\user\Desktop\University\Front END\final\html\careers.html">Careers</a></div>
+                        <div><a href="#">Blog</a></div>
+                        <div><a href="#">Contact</a></div>
+                    </div>
+                    <div class="burger">
+                        <a href="#" class="burger_link" id="burger_link">
+                            <span></span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -322,5 +331,12 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            $('.burger_link').on('click', function(e) {
+                e.preventDefault;
+                $('.burger_link, .navbar').toggleClass('active');
+            });
+        </script>
     </body>
 </html>

@@ -5,22 +5,33 @@
         <link rel="stylesheet" href="../css/style_careers.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Careers at MetaLab</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="C:\Users\user\Desktop\University\Front END\final\js\script.js"></script>
+        
     </head>
 
     <body>
+        
         <div class="main">
-            
             <div class="header">
                 <div class="logo">
-                    <a href="C:\Users\user\Desktop\University\Front END\final\html\index.html">
+                    <a href="#">
                         <img src="https://assets.website-files.com/6010047027c80a4854f3bdd8/60198a0724bdae7b5572f913_logo_blue.svg" loading="lazy" alt="metalab logo">
                     </a>
                 </div>
                 <div class="threeLines">
-                    <a href="#">
-                        &#9776;
-                    </a>
+                    <div class="navbar" id="navbar">
+                        <div><a href="#">About</a></div>
+                        <div><a href="C:\Users\user\Desktop\University\Front END\final\html\careers.html">Careers</a></div>
+                        <div><a href="#">Blog</a></div>
+                        <div><a href="#">Contact</a></div>
+                    </div>
+                    <div class="burger">
+                        <a href="#" class="burger_link" id="burger_link">
+                            <span></span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -432,7 +443,7 @@
             <div class="footer">
                 <div class="footer_mid">
                     <div class="privacy">
-                        <a href="C:\Users\user\Desktop\University\Front END\final\html\index.html"><img src="https://assets.website-files.com/6010047027c80a4854f3bdd8/60141c741bc89fbd7d9d95ba_purple.svg" loading="lazy" alt="MetaLab Icon" class="bottom_logo"></a>
+                        <a href="#"><img src="https://assets.website-files.com/6010047027c80a4854f3bdd8/60141c741bc89fbd7d9d95ba_purple.svg" loading="lazy" alt="MetaLab Icon" class="bottom_logo"></a>
                         <a href="C:\Users\user\Desktop\University\Front END\final\html\privacyPolicy.html" class="policy">Privacy Policy</a>
                     </div>
 
@@ -445,5 +456,12 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            $('.burger_link').on('click', function(e) {
+                e.preventDefault;
+                $('.burger_link, .navbar').toggleClass('active');
+            });
+        </script>
     </body>
 </html>

@@ -95,3 +95,12 @@ function smooth(){
         })
     }       
 }
+
+function burger(){
+    if(document.querySelector('navbar').style.display = 'none'){
+        document.querySelector('navbar').style.display = 'flex';
+    }
+    else{
+        document.querySelector('navbar').style.display = 'none';
+    }
+}    
